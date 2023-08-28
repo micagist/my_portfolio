@@ -66,6 +66,17 @@ const StyledNav = styled.nav`
       padding: 0;
     }
   }
+  @media (max-width: 720px) {
+    flex-direction: column;
+    ul {
+      justify-content: space-around;
+      width: 100%;
+      margin: 0;
+    }
+    li {
+      padding: 0;
+    }
+  }
 `;
 
 export default Nav;

@@ -20,6 +20,18 @@ const AboutSec = () => {
       </AboutImage>
       <Blurb>
         <h1>About Me</h1>
+        <Icons>
+          <i class="devicon-css3-plain"></i>
+          <i class="devicon-git-plain"></i>
+          <i class="devicon-html5-plain"></i>
+          <i class="devicon-javascript-plain"></i>
+          <i class="devicon-mongodb-plain-wordmark"></i>
+          <i class="devicon-nodejs-plain"></i>
+          <i class="devicon-npm-original-wordmark"></i>
+          <i class="devicon-react-original"></i>
+          <i class="devicon-sass-original"></i>
+          <i class="devicon-vscode-plain"></i>
+        </Icons>
         <p>
           I've always considered myself an artist. It began with scribbling with
           crayons as a child, to Photoshop and Procreate in adulthood. I
@@ -45,6 +57,7 @@ const About = styled(motion.div)`
   background-image: linear-gradient(#222221, #798988);
   min-height: 60vh;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 5rem 20rem;
   position: relative;
@@ -71,9 +84,20 @@ const AboutImage = styled.div`
     padding-left: 10rem;
     object-fit: cover;
   }
-  @media (max-width: 1099px) {
+  @media (max-width: 1406px) {
     display: none;
   }
+`;
+
+const Icons = styled.div`
+  color: white;
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+  text-align: center;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+  text-shadow: 10px 10px 10px black;
 `;
 
 export default AboutSec;

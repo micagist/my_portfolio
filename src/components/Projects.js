@@ -122,7 +122,19 @@ const Project = styled(motion.div)`
   align-items: center;
   justify-content: space-between;
   padding: 5rem 20rem;
-  @media (max-width: 1500px) {
+  @media (max-width: 1750px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 15rem;
+  }
+  @media (max-width: 1600px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 10rem;
+  }
+  @media (max-width: 1406px) {
     display: block;
     justify-content: center;
   }
@@ -157,6 +169,7 @@ const Cards = styled.div`
   align-items: center;
   @media (max-width: 1500px) {
     justify-content: center;
+    padding-right: 0;
   }
 `;
 
